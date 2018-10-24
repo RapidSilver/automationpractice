@@ -24,8 +24,8 @@ public class BaseActions {
     }
 
     public void selectElement(By by, String value) {
-        Select selectDays = new Select(driver.findElement(by));
-        selectDays.selectByValue(value);
+        Select select = new Select(driver.findElement(by));
+        select.selectByValue(value);
     }
 
     public boolean isElementPresent(By by) {
